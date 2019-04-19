@@ -99,13 +99,13 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Boloci",
+        title: "BoloClips",
         href: "https://www.boloci.com"
     },{
-        title: "简书·TristanZeng",
+        title: "我的简书",
         href: "https://www.jianshu.com/u/150c0bb5ffd6"
     },{
-        title: "利用 GitHub Pages 快速搭建个人博客",
+        title: "利用GitHubPages快速搭建个人博客",
         href: "https://www.jianshu.com/p/e68fba58f75c"
     }
 ]
