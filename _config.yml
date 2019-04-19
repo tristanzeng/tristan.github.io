@@ -19,7 +19,7 @@ sidebar-avatar: /img/avatar.png      # use absolute URL, seeing it's used in bot
 # SNS settings
 RSS: false
 github_username:    tristanzeng
-jianshu_username:   菠萝刺
+jianshu_username:   150c0bb5ffd6
 # weibo_username:     tristanzeng
 # zhihu_username:     tristanzeng
 # facebook_username:  tristanzeng
@@ -104,8 +104,5 @@ friends: [
     },{
         title: "我的简书",
         href: "https://www.jianshu.com/u/150c0bb5ffd6"
-    },{
-        title: "利用GitHubPages快速搭建个人博客",
-        href: "https://www.jianshu.com/p/e68fba58f75c"
     }
 ]
