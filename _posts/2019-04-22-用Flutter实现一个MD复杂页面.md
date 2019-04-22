@@ -24,6 +24,6 @@ Flutter作为全新跨平台应用框架，在页面渲染和MD开发上优势�
 - 实现首页feed流的加载更多功能
 
 ## 页面展示
-<figure class="third">
-    <img src="../../../../img/post-flutter-1.jpeg"><img src="../../../../img/post-flutter-2.jpeg"><img src="../../../../img/post-flutter-3.jpeg">
-</figure>
+<div>
+    <img src="../../../../img/post-flutter-1.jpeg" width="30%"><img src="../../../../img/post-flutter-2.jpeg width="30%""><img src="../../../../img/post-flutter-3.jpeg width="30%"">
+</div>
