@@ -25,5 +25,5 @@ Flutter作为全新跨平台应用框架，在页面渲染和MD开发上优势�
 
 ## 页面展示
 <div>
-    <img src="../../../../img/post-flutter-1.jpeg" width="33%" style="display: inline-block; border: 2px solid #000000;"/><img src="../../../../img/post-flutter-2.jpeg" width="33%" style="display: inline-block; border: 2px solid #000000;"/><img src="../../../../img/post-flutter-3.jpeg" width="33%" style="display: inline-block; border: 2px solid #000000;">
+    <img src="../../../../img/post-flutter-1.jpeg" width="33%" style="display: inline-block; border: 2px solid #000000;"/><img src="../../../../img/post-flutter-2.jpeg" width="33%" style="display: inline-block; border: 2px solid #000000; margin-left: 0.5%; margin-right: 0.5%;"/><img src="../../../../img/post-flutter-3.jpeg" width="33%" style="display: inline-block; border: 2px solid #000000;">
 </div>
