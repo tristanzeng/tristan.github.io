@@ -4,7 +4,7 @@ title:      用Flutter实现一个MD复杂页面
 subtitle:   Flutter从入门到放弃
 date:       2019-04-22
 author:     Tristan
-header-img: img/post-bg-diff.jpg
+header-img: img/post-bg-flutter.jpg
 catalog: true
 tags:
     - Flutter
