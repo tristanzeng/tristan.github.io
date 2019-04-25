@@ -99,8 +99,8 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "BoloClips",
-        href: "https://www.boloci.com"
+        title: "LiuYang",
+        href: "https://handsomeliuyang.github.io"
     }, {
         title: "小文字",
         href: "http://blog.hacktons.cn/"
