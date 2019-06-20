@@ -99,6 +99,9 @@ service-worker: true
 # Friends
 friends: [
     {
+        title: "JSON6",
+        href: "https://json6.boloci.com"
+    }, {
         title: "LiuYang",
         href: "https://handsomeliuyang.github.io"
     }, {
