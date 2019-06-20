@@ -100,7 +100,7 @@ service-worker: true
 friends: [
     {
         title: "JSON6",
-        href: "https://json6.boloci.com"
+        href: "http://json6.boloci.com"
     }, {
         title: "LiuYang",
         href: "https://handsomeliuyang.github.io"
