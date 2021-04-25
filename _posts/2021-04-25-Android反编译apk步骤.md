@@ -35,14 +35,14 @@ tags:
 
 ## 代码反编译
 #### 工具smali和dex2jar
-下载地址 [smali下载](https://www.greenxf.com/soft/123267.html)
+下载地址 [smali下载](https://www.greenxf.com/soft/123267.html)<br/>
 下载地址 [dex2jar下载](https://sourceforge.net/projects/dex2jar/?source=typ_redirect)
 
 #### smali转dex
 > java -jar smali-2.1.3.jar [smali文件夹] -o classes.dex
 
 #### dex转jar
-> chmod +x d2j_invoke.sh
+> chmod +x d2j_invoke.sh<br/>
 > sh d2j-dex2jar.sh classes.dex
 
 ## 代码阅读
