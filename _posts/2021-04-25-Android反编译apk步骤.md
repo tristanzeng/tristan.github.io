@@ -4,7 +4,7 @@ title:      Android反编译apk步骤
 subtitle:   逆向开发
 date:       2021-04-25
 author:     Tristan
-header-img: img/android_reverse_bg.png
+header-img: img/android_reverse_bg.jpeg
 catalog: true
 tags:
     - 反编译
