@@ -42,6 +42,7 @@ tags:
 > java -jar smali-2.1.3.jar [smali文件夹] -o classes.dex
 
 #### dex转jar
+将classes.dex文件拷贝到dex2jar解压缩后的目录中，然后进入目录执行：<br/>
 > chmod +x d2j_invoke.sh<br/>
 > sh d2j-dex2jar.sh classes.dex
 
