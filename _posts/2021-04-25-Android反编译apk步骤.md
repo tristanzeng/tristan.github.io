@@ -58,4 +58,6 @@ Android开发必备
 
 ![image](https://user-images.githubusercontent.com/4709890/115993957-a3526500-a607-11eb-9196-3673cce1a073.png)
 
+## Jadx
+[Mac安装Jadx反编译工具](https://www.jianshu.com/p/3cc4e861b3db)
 
