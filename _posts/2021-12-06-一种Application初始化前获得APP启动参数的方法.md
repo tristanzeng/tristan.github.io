@@ -4,7 +4,7 @@ title:      一种Application初始化前获得APP启动参数的方法
 subtitle:   隐私弹窗实现原理
 date:       2021-12-06
 author:     Tristan
-header-img: img/post-bg-multimedia.jpeg
+header-img: img/privacy.jpg
 catalog: true
 tags:
     - 启动参数
