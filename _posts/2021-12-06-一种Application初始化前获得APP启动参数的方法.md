@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      一种Application初始化前获得APP启动参数的方法
+subtitle:   隐私弹窗实现原理
+date:       2021-12-06
+author:     Tristan
+header-img: img/post-bg-multimedia.jpeg
+catalog: true
+tags:
+    - 启动参数
+    - 隐私弹窗
+
+---
+
 ## 背景
 APP在启动时通常可以带一些参数，Android系统会在Application初始化后，紧接着根据这些参数创建相应的页面Activity，同时会把这些参数传递给页面，然后完成程序到页面的启动。从系统提供的能力看，启动参数只有在启动页创建后通过页面Intent才可以获取，Application的初始化是在启动页创建之前完成的，它的初始化方法中系统并没有给其提供启动参数。
 
