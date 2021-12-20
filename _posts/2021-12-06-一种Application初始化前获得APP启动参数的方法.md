@@ -28,19 +28,19 @@ APP在启动时通常可以带一些参数，Android系统会在Application初�
 4. 接着将获取到的启动参数传给Application，重新完成初始化逻辑。
 5. 完成初始化后，记得将Hook取消，防止其它非启动页被Hook后再次初始化Application。
 6. 继续往下执行Activity页面的创建方法，走完后续的启动流程。
-<img  referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"  src="https://wos.58cdn.com.cn/IjGfEdCbIlr/ishare/03c668e3-19ee-4f6c-a37f-e9c2795fc57e图片 1.png" width="50%"></img>
+<img src="https://wos.58cdn.com.cn/IjGfEdCbIlr/ishare/03c668e3-19ee-4f6c-a37f-e9c2795fc57e图片 1.png" width="50%"/>
 
 ## 具体实现
 1. 通过反射拿到 ActivityThread 的 sCurrentActivityThread 变量的值，然后再通过该实例变量拿到mInstrumentation 变量。再通过反射 将 mInstrumentation 变量设置为我们自定义的 CustomInstrumentation 对象。这样就实现了Hook Instrumentation。
-<img  referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"  src="https://wos.58cdn.com.cn/IjGfEdCbIlr/ishare/c6bda895-b5b2-4650-9b4c-407b044cae72图片 2.png" width="80%"></img>
+<img src="https://wos.58cdn.com.cn/IjGfEdCbIlr/ishare/c6bda895-b5b2-4650-9b4c-407b044cae72图片 2.png" width="80%"/>
 
 2. 自定义Instrumentation。通过重写callApplicationOnCreate方法，将父类的callApplicationOnCreate方法暂时不要调用，以此屏蔽Application的初始化方法。
-<img  referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"  src="https://wos.58cdn.com.cn/IjGfEdCbIlr/ishare/33cf6b39-8280-43cf-966c-1aebd3b23579图片 3.png" width="80%"></img>
+<img src="https://wos.58cdn.com.cn/IjGfEdCbIlr/ishare/33cf6b39-8280-43cf-966c-1aebd3b23579图片 3.png" width="80%"/>
 
 3. 同理，重写newActivity方法，在newActivity方法中可以直接获取到intent对象，它存放了启动参数。
 
 4. 取到启动参数后，交给自定义的Application，然后Application在初始化时就可以获得启动参数了。紧接着，通过重新调用父类的callApplicationOnCreate方法完成Application的初始化任务。
-<img  referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"   referrerPolicy="no-referrer"  src="https://wos.58cdn.com.cn/IjGfEdCbIlr/ishare/e5532a5e-fa39-48b2-9a5c-2ff80ded2c14图片 4.png" width="80%"></img>
+<img src="https://wos.58cdn.com.cn/IjGfEdCbIlr/ishare/e5532a5e-fa39-48b2-9a5c-2ff80ded2c14图片 4.png" width="80%"/>
 
 5. 可以看到，Application在初始化时已经可以获得启动参数Bundle对象了。获得启动参数后，不应该再重写newActivity方法了，这里需要将Hook取消。Hooker对象在自定义的Application中，通过调用它的resetInstrumentation方法可以把之前替换的Instrumentation还原回去。
 
