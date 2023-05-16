@@ -16,7 +16,7 @@ tags:
 自定义ViewGroup是在Android应用中创建自定义布局容器的方式之一。它允许你以完全自定义的方式定义子视图的布局和交互。下面是自定义ViewGroup的基本原理：
 
 1. 继承合适的ViewGroup类：创建一个新的Java类，并继承自合适的ViewGroup类，如ViewGroup、LinearLayout、RelativeLayout等。你可以选择基类以满足你的布局需求。
-2. 
+
 ```
 public class CustomViewGroup extends ViewGroup {
     // 构造函数
@@ -72,7 +72,9 @@ public class CustomViewGroup extends ViewGroup {
     </declare-styleable>
 </resources>
 ```
+
 6. 在XML布局文件中使用自定义ViewGroup：在你的XML布局文件中，可以像使用其他布局容器一样使用自定义ViewGroup，并设置自定义属性。
+
 ```
 <com.example.app.CustomViewGroup
     android:layout_width="match_parent"
@@ -89,4 +91,5 @@ View childView = LayoutInflater.from(context).inflate(R.layout.child_layout, nul
 customViewGroup.addView(childView);
 // 其他操作
 ```
+
 通过上述步骤，你可以创建一个自定义的ViewGroup，并在Android应用中使用和操作它。自定义ViewGroup使你能够以自定义的方式管理子视图的布局和交互，并实现特定的布局需求。你可以自由定义子视图的位置和大小，并对子视图进行自定义排版和布局。
