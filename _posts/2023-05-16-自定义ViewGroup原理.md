@@ -4,7 +4,7 @@ title:      自定义ViewGroup原理
 subtitle:   ViewGroup
 date:       2023-05-16
 author:     Tristan
-header-img: img/preload.jpeg
+header-img: img/view.jpeg
 catalog: true
 tags:
     - ViewGroup
